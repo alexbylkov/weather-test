@@ -1,0 +1,49 @@
+.weather-on-day
+  display: flex
+  justify-content: space-between
+  @media (max-width: 768px)
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+  &__info
+    @media (max-width: 768px)
+      width: 100%
+  &__tab
+    text-transform: capitalize
+    margin-bottom: 10px
+    align-self: center
+  &__table
+    margin-top: 20px
+    @media (max-width: 768px)
+      margin: 0 auto
+      margin-top: 20px
+    thead
+      text-align: left
+    tr
+      border-bottom: 1px solid #000000
+    td
+      height: 30px
+    td:first-child
+      padding-right: 20px
+      @media (max-width: 768px)
+        padding-right: 10px
+  &__map
+    position: relative
+    width: 60%
+    height: 360px
+    @media (max-width: 992px)
+      height: 280px
+    @media (max-width: 768px)
+      width: 100%
+      margin-top: 40px
+      height: 200px
+  &__map-window
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-size: 14px
+    span
+      font-size: 22px
+      margin-bottom: 10px
+  

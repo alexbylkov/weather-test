@@ -1,0 +1,36 @@
+.google-select 
+  max-width: 260px 
+  width: 100%
+  position: relative 
+  @media (max-width: 576px)
+    max-width: 360px
+  &__input
+    width: 100%
+    height: 40px
+    outline-color: #7d7e99
+    border: 1px solid #7d7e99
+    padding-left: 10px
+    color: #525252
+    background-color: #52525207
+    font-size: 16px
+    &::placeholder
+      color: #7d7e99
+      font-size: 16px
+  &__dropdown
+    position: absolute
+    top: 40px
+    width: 100%
+    font-size: 14px
+    border: 1px solid #7d7e9915
+    border-top: none
+    z-index: 2
+  &__item
+    cursor: pointer
+    background-color: #fff
+    color: #7d7e99
+    padding: 10px
+    &--active
+      cursor: pointer
+      background-color: #fafafa
+      color: #525252
+      padding: 10px
